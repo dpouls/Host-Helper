@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body ng-controller="main" style="max-width:500px;background:#eee;">
+    <div style="display: flex; justify-content-center; width: 100%">
     <div>
       <h3>How to setup SSL for nginx + node droplets</h3>
       <br>
@@ -40,7 +41,7 @@
     </div>
     <button ng-disabled = "{{disabled}}" ng-click="copy2 = copy('cert')">Copy</button> {{copy2}}
     <textarea id="cert" style="display:block;height:1em;width:100%;"> {{setupCerts()}}</textarea>
-
+    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
 <script>
 angular.module('help',[]).controller('main', function($scope, $http){
